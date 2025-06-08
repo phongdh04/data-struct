@@ -15,19 +15,20 @@
         "isDefault": true
       }
     },
-    {
-      "label": "build and run C++",
-      "type": "shell",
-      "command": "cmd",
-      "args": [
-        "/c",
-        "g++ \"${file}\" -o \"${fileDirname}\\${fileBasenameNoExtension}.exe\" && \"${fileDirname}\\${fileBasenameNoExtension}.exe\""
-      ],
-      "problemMatcher": [],
-      "group": {
-        "kind": "build",
-        "isDefault": false
-      }
-    }
+{
+  "label": "build active file",    
+  "type": "shell",
+  "command": "cmd",
+  "args": [
+    "/c",
+    "g++ -g \"${file}\" -o \"${fileDirname}\\${fileBasenameNoExtension}.exe\""
+  ],
+  "problemMatcher": [],
+  "group": {
+    "kind": "build",
+    "isDefault": true
+  }
+}
+
   ]
 }

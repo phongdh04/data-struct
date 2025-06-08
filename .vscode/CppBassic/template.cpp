@@ -19,7 +19,7 @@ rectangle<T>::rectangle (T l, T b){
 template<class T>  
 T rectangle<T>::area(){
     return this->length*this->breadth;
-}
+} 
 int main(){
     rectangle<int> r (5, 3);
     cout << r.area();
