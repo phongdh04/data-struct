@@ -7,7 +7,7 @@ int main(){
     // * su dung khi huy tham chieu hoac khai bao contro
     int *p = &a;
     cout <<"value of a: "<<a << endl;
-    cout <<"address of a get by b: " << p << endl;
+    cout <<"address of a get by p: " << p << endl;
     cout <<"address of a get by &a: " << &a << endl;
     // di den dia chi cua a va lay gia tri cua no ra
     cout <<"value of a get by p: "<<*p << endl;
@@ -24,6 +24,7 @@ int main(){
     // khoi tao trong stack
     int arr[5]={1, 2, 3, 4, 5};
     int *pointer; 
+
     // gan dia chi dau tien cua mang vao pointer
     pointer=arr; // or pointer = &arr[0];
     cout << "address of head arr: " << pointer << endl;
