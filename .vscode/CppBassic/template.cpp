@@ -1,6 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+// hoat dong voi moi loai du lieu ma khong can viet class khac
 template<class T>
 class rectangle{
     private:
